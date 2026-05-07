@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - W.K.Dulnindu Saranga</title>
+    <link rel="icon" type="image/png" href="https://i.ibb.co/qYN421js/logo.png">
+    <link rel="stylesheet" href="pageEditor_validator_ST4.css"> <!-- External CSS link -->
+</head>
+
+<body>
+    <header id="top">
+        <div class="navbar">
+            <div class="navbar-logo">
+                <a href="home.html" class="logo-button">
+                    <img src="https://i.ibb.co/qYN421js/logo.png" class="rotating-logo" alt="Logo">
+                    <span class="logo-text">Life on Land</span>
+                </a>
+            </div>
+            <div class="nav-center">
+                <a href="table.html">Project Table</a>
+                <a href="#volenteer">volenteer</a>
+                <a href="#User_Profile">User Profile</a>
+                <a href="#Team">Our Team</a>
+                <a href="#Site_map">Site map</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="stud">
+        <h2>Venumi Malkini, Student 4</h2>
+    </section>
+
+    <div class="container fade-in">
+        <main>
+            <section>
+                <h2 id="splash">1. Content Overview</h2>
+                <h4>Venumi Malkini (Student 4)</h4>
+                <ul>
+                    <li><a href="#userProfile">User Profile Page</a></li>
+                    <li><a href="#sitemap">Sitemap Page</a></li>
+                    <li><a href="#content1">Endangered Species Protection (Content page 1)</a></li>
+                    <li><a href="#ref">References</a></li>
+                </ul>
+
+                <div class="tech-description-container">
+                    <h2>3. Technical Description:</h2>
+
+                    <section class="TDsection">
+
+                        <h2 id="userProfile">i. User Profile Page</h2>
+                        <p>This page introduces a user profile with structured sections including About Me, Goals,
+                            Skills, and a Contact Form. It uses a combination of CSS Grid and Flexbox to organize
+                            content responsively.</p>
+                        <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST4.html#userProfilevalidation">Homepage Page validation report</a>, use the
+                            marker to jump to the corresponding section of the validation page.</p>
+                        <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                        <h3>Link to the page</h3>
+                        <p><a href="user_profile.html">Link to the actual User Profile page.</a></p>
+                        <h3>HTML Techniques</h3>
+                        <ul>
+                            <li>The <code>&lt;div&gt;</code> tag is used extensively to structure the layout into
+                                clearly defined sections, including navigation, profile card, and footer.</li>
+                            <li><code>&lt;section&gt;</code> is used to semantically group related content like Skills,
+                                About Me, and Goals.</li>
+                            <li><code>&lt;a&gt;</code> and <code>&lt;img&gt;</code> tags are used for navigation and
+                                displaying user profile and UN goal icons.</li>
+                            <li><code>&lt;form&gt;</code> and its children (<code>&lt;input&gt;</code>,
+                                <code>&lt;textarea&gt;</code>, <code>&lt;button&gt;</code>) are used to collect contact
+                                details from visitors.
+                            </li>
+                            <li><code>&lt;footer&gt;</code> contains social links and site metadata to ensure good
+                                structure and navigation at the bottom of the page.</li>
+                            <li><code>&lt;script&gt;</code> is used to toggle visibility of the footer when the user
+                                scrolls to the bottom.</li>
+                        </ul>
+                        <h3>Accessibility</h3>
+                        <ul>
+                            <li>Images include descriptive <code>alt</code> text for better screen reader compatibility.
+                            </li>
+                            <li>Layout uses Flexbox for a responsive design that adapts to different screen sizes.</li>
+                            <li>Navigation links are grouped clearly and organized in a horizontal layout for quick
+                                access.</li>
+                            <li>Calendy integration allows accessible scheduling with a single click.</li>
+                            <li>Contact form includes required fields and proper input types (e.g., <code>email</code>,
+                                <code>tel</code>) to support validation and accessibility.
+                            </li>
+                            <li>Footer becomes visible only near the bottom of the page to reduce visual clutter and
+                                improve user focus on content.</li>
+                        </ul>
+                        <h3 id="compliance"> Compliance</h3>
+                        <p>The User Profile Page follows good web development practices aligned with JANET regulations.
+                            It uses original, clearly structured content, and external resources (e.g., social icons, UN
+                            goals) from reputable sources. It avoids misleading content, uses ethical and safe scripts
+                            (e.g., Calendly integration), and supports user interaction without compromising
+                            accessibility or security.</p>
+
+
+
+                        <h2 id="sitemap">ii. Site Map Page</h2>
+                        <p>This page visually represents the structure of the website using an interactive SVG-based
+                            diagram. Each node in the map corresponds to a major page on the site, such as Homepage,
+                            Project Table, User Profile, Volunteer, Our Team, Contact Us, and Feedback. It serves as a
+                            navigation aid and a visual index of the site layout.</p>
+                        <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST4.html#sitemapValidation">Project Table Page validation report</a>, use
+                            the marker to jump to the corresponding section of the validation page.</p>
+                        <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                        <h3>Link to the page</h3>
+                        <p><a href="sitemap.html">Link to the actual Site Map page.</a></p>
+                        <h3>HTML Techniques</h3>
+                        <ul>
+                            <li><code>&lt;svg&gt;</code> is used to create a scalable and responsive vector graphic
+                                representing the sitemap structure.</li>
+                            <li><code>&lt;a xlink:href&gt;</code> within the SVG links each visual box to a real page,
+                                making the diagram interactive.</li>
+                            <li><code>&lt;rect&gt;</code> elements with class <code>.box</code> are styled to look like
+                                clickable buttons.</li>
+                            <li><code>&lt;text&gt;</code> tags are centered inside the boxes using
+                                <code>text-anchor</code> and <code>dominant-baseline</code>.
+                            </li>
+                            <li><code>&lt;line&gt;</code> elements visually connect parent and child pages, illustrating
+                                navigation hierarchy.</li>
+                            <li>Navigation bar and footer are reused from the template layout for visual consistency
+                                across the website.</li>
+                        </ul>
+                        <h3>Accessibility</h3>
+                        <ul>
+                            <li>Each box includes descriptive text and clear alt navigation via interactive links,
+                                improving user understanding and usability.</li>
+                            <li>SVG is accessible and scalable across screen sizes; it maintains clarity on both desktop
+                                and mobile.</li>
+                            <li>The footer uses scroll-based visibility logic to ensure it doesn’t interrupt content
+                                viewing but appears when appropriate.</li>
+                            <li>Hover interactions and SVG link tags allow keyboard and screen reader navigation support
+                                when used properly with ARIA (can be improved).</li>
+                        </ul>
+                        <h3 id="compliance"> Compliance</h3>
+                        <p>The Site Map page adheres to JANET guidelines by using original code, SVG-based structure for
+                            clarity, and ethical use of external links and media. All linked destinations are clearly
+                            labeled and relevant to the site structure. The page avoids tracking scripts or unsafe
+                            inline scripts and maintains consistency with other site pages via shared navigation and
+                            footer.</p>
+
+
+                        <h2 id="content1">iii. Content Page (Student 4)</h2>
+                        <p>This page is a well-structured and informative content section dedicated to raising awareness
+                            about endangered species and the need for global protection. It integrates data, visuals,
+                            and user engagement elements in support of the UN’s Sustainable Development Goal 15 (Life on
+                            Land). The content is presented using responsive grid layouts and animated transitions to
+                            enhance engagement and readability.</p>
+
+                        <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST4.html#content1Val">Climate Regulation Page validation report</a>, use
+                            the marker to jump to the corresponding section of the validation page.</p>
+                        <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                        <h3>Link to the page</h3>
+                        <p><a href="content_ST4.html">Link to the actual Endangered Species Protection content page.</a>
+                        </p>
+                        <h3>HTML Techniques</h3>
+                        <ul>
+                            <li><code>&lt;section&gt;</code> is used to group content areas such as species details,
+                                protection methods, and user call-to-actions for better structure and semantic clarity.
+                            </li>
+                            <li><code>&lt;div&gt;</code> tags with custom classes like <code>.cause-card</code> and
+                                <code>.endangered-card</code> organize content into responsive grids using CSS Flexbox
+                                or Grid.
+                            </li>
+                            <li><code>&lt;img&gt;</code> tags include meaningful visuals for each species and
+                                conservation effort, aligned and sized for responsive presentation.</li>
+                            <li><code>&lt;script&gt;</code> is used to handle scroll-triggered animation for content
+                                fade-in and footer visibility on scroll.</li>
+                            <li>Emoji icons (🦁, 🛡️, ⚠️) are used effectively to visually break sections and appeal to
+                                user emotion.</li>
+                        </ul>
+                        <h3>Accessibility</h3>
+                        <ul>
+                            <li>Images include descriptive <code>alt</code> attributes for better screen reader support.
+                            </li>
+                            <li>Content text is legible with good color contrast, large headings, and adequate line
+                                spacing for readability.</li>
+                            <li>The <code>.fade-in</code> class is animated via JavaScript for a smoother user
+                                experience on scroll without disrupting accessibility.</li>
+                            <li>Navigation is clearly structured and repeated at the top of the page, with consistent
+                                branding and semantic HTML usage.</li>
+                        </ul>
+                        <h3 id="compliance"> Compliance</h3>
+                        <p>This page adheres to JANET guidelines by using original, well-researched content and
+                            copyright-respectful media. All external images are used via hotlink from reputable sources,
+                            and educational intent is clearly conveyed. No misleading content or unethical tracking
+                            scripts are present. All interaction is focused on learning and action, maintaining
+                            integrity and user safety.</p>
+                    </section>
+                </div>
+
+                <section id="challenges-lessons" class="section-wrapper">
+                    <h2>Challenges and Lessons Learned</h2>
+
+                    <div class="subsection">
+                        <h3>Challenges Encountered</h3>
+
+                        <h4>Responsive Layout Across Multiple Pages</h4>
+                        <p>
+                            Ensuring a consistent responsive layout across pages like <code>user_profile.html</code>,
+                            <code>sitemap.html</code>, and <code>content_ST4.html</code> proved challenging. Each page
+                            had different
+                            structures (SVG sitemap, profile cards, content grids), which required refining shared
+                            styles and media
+                            queries in CSS to maintain a unified design across screen sizes.
+                        </p>
+
+                        <h4>Interactive Footer Visibility</h4>
+                        <p>
+                            The scroll-based animation for the footer initially did not trigger consistently on all
+                            pages. Fixing this
+                            involved adding scroll event listeners and checking viewport height vs. document height to
+                            toggle the
+                            <code>.visible</code> class accurately on scroll. This was applied consistently across all
+                            pages.
+                        </p>
+
+                        <h4>Image Scaling and Alignment</h4>
+                        <p>
+                            Pages like <code>user_profile.html</code> and <code>content_ST4.html</code> include
+                            high-resolution images
+                            and icons. On smaller devices, they either overflowed or became misaligned. The fix involved
+                            applying
+                            <code>max-width</code>, <code>auto margin</code>, and <code>display: block</code> styles for
+                            proper centering
+                            and scaling.
+                        </p>
+
+                        <h4>Semantic Navigation and Internal Linking</h4>
+                        <p>
+                            In the <code>sitemap.html</code> page, linking clickable SVG areas to different
+                            sections/pages was
+                            initially difficult due to SVG coordinate limitations. This was resolved using
+                            <code>&lt;a xlink:href&gt;</code>
+                            and well-positioned elements within the SVG canvas.
+                        </p>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>Lessons Learned</h3>
+
+                        <h4>Consistent Class Naming and Layout Patterns</h4>
+                        <p>
+                            Using consistent class naming (like <code>.section</code>, <code>.card</code>, and
+                            <code>.footer</code>)
+                            made it easier to reuse layout and animation styles across different HTML files while
+                            maintaining design
+                            integrity.
+                        </p>
+
+                        <h4>Testing Across Resolutions</h4>
+                        <p>
+                            Checking layouts on desktop, tablet, and mobile revealed hidden issues like image overflow
+                            and misaligned
+                            buttons. Applying <code>flexbox</code>, <code>grid</code>, and responsive media queries
+                            helped solve these.
+                        </p>
+
+                        <h4>Progressive Enhancement with JavaScript</h4>
+                        <p>
+                            JavaScript was used minimally but effectively — for example, scroll-based footer animation
+                            and section fade-ins.
+                            These enhanced user experience without compromising accessibility or load speed. Proper
+                            scroll thresholds
+                            and DOM readiness checks were essential to avoid glitches.
+                        </p>
+                    </div>
+                </section>
+
+            </section>
+
+            <section class="reference">
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified
+                    style). For example:<br><br>
+                <ul class="ref">
+                    <li>imgbb (2025). <i>imgbb.</i> Available at: <a
+                            href="https://i.ibb.co/qYN421js/logo.png">https://i.ibb.co/qYN421js/logo.png</a> (Accessed:
+                        19 June 2025).</li>
+                    <li>imgbb (2025). <i>imgbb.</i> Available at: <a
+                            href="https://i.ibb.co/bgsMmckL/background-image.png">https://i.ibb.co/bgsMmckL/background-image.png</a>
+                        (Accessed: 19 June 2025).</li>
+                    <li>imgbb (2025). <i>imgbb.</i> Available at: <a
+                            href="https://i.ibb.co/n8MNVRps/Chat-GPT-Image-Jun-16-2025-12-29-55-PM.png">https://i.ibb.co/n8MNVRps/Chat-GPT-Image-Jun-16-2025-12-29-55-PM.png</a>
+                        (Accessed: 15 June 2025).</li>
+                    <li>imgbb (2025). <i>imgbb.</i> Available at: <a
+                            href="https://i.ibb.co/20ZPBdwd/Chat-GPT-Image-Jun-16-2025-12-14-49-PM.png">https://i.ibb.co/20ZPBdwd/Chat-GPT-Image-Jun-16-2025-12-14-49-PM.png</a>
+                        (Accessed: 17 June 2025).</li>
+                    <li>imgbb (2025). <i>imgbb.</i> Available at: <a
+                            href="https://i.ibb.co/FkTKQvCk/Chat-GPT-Image-Jun-16-2025-12-10-33-PM.png">https://i.ibb.co/FkTKQvCk/Chat-GPT-Image-Jun-16-2025-12-10-33-PM.png</a>
+                        (Accessed: 17 June 2025).</li>
+                    <li>imgbb (2025). <i>imgbb.</i> Available at: <a
+                            href="https://i.ibb.co/G3nrxdM3/Chat-GPT-Image-Jun-15-2025-09-49-01-PM.png">https://i.ibb.co/G3nrxdM3/Chat-GPT-Image-Jun-15-2025-09-49-01-PM.png</a>
+                        (Accessed: 15 June 2025).</li>
+                    <li>imgbb (2025). <i>imgbb.</i> Available at: <a
+                            href="https://i.ibb.co/20ppKB3k/soil.png">https://i.ibb.co/20ppKB3k/soil.png</a> (Accessed:
+                        17 June 2025).</li>
+                    <li>imgbb (2025). <i>imgbb.</i> Available at: <a
+                            href="https://i.ibb.co/7NgsTQZd/Chat-GPT-Image-Jun-16-2025-06-11-39-PM.png">https://i.ibb.co/7NgsTQZd/Chat-GPT-Image-Jun-16-2025-06-11-39-PM.png</a>
+                        (Accessed: 27 June 2025).</li>
+                </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <aside>
+            <h3>Core pages developed:</h3>
+
+            <ul class="top-level-ul">
+                <li>Student 2</li>
+                <ul>
+                    <li><a href="user_profile.html">User Profile page </a></li>
+                    <li><a href="sitemap.html">Sitemap page</a></li>
+                    <li><a href="content_st4.html">Content page 1</a></li>
+                    <li><a href="validation_ST4.html">Validation Page ST4</a></li>
+                </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61577288455530" class="social-button">
+                    <img src="https://i.ibb.co/HLzJkF0n/facebook.png" alt="facebook"> Facebook
+                </a>
+                <a href="https://www.instagram.com/life_on_land_2025" class="social-button">
+                    <img src="https://i.ibb.co/0yvwLwcn/instagram.png" alt="Instagram"> Instagram
+                </a>
+                <a href="#Feedback" class="social-button">
+                    <img src="https://i.ibb.co/v47FS0z4/feedback.png" alt="Feedback"> Feedback
+                </a>
+                <a href="content5_ST2(Contact).html" class="social-button">
+                    <img src="https://i.ibb.co/3XyM3RN/contact-us.png" alt="Contact Us"> Contact Us
+                </a><br><br>
+                <a href="pageEditor_ST4.html" class="social-button"> Student 4 page editor</a>
+            </div>
+        </div>
+    </footer>
+        <script>
+            window.addEventListener('scroll', function () {
+                const footer = document.querySelector('.footer');
+                const scrollTop = window.scrollY;
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight;
+
+                // When user scrolls near the bottom (e.g. within 100px)
+                if (scrollTop + windowHeight >= documentHeight - 50) {
+                    footer.classList.add('visible');
+                } else {
+                    footer.classList.remove('visible');
+                }
+            });
+
+
+            // Fade-in on scroll
+            const faders = document.querySelectorAll('.fade-in');
+
+            function handleScroll() {
+                faders.forEach(fade => {
+                    const rect = fade.getBoundingClientRect();
+                    if (rect.top <= window.innerHeight - 100) {
+                        fade.classList.add('visible');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', handleScroll);
+            window.addEventListener('load', handleScroll); // Trigger on page load too
+        </script>
+</body>
+
+</html>
